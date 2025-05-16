@@ -43,7 +43,6 @@ async def edit_or_reply(msg: Message, **kwargs):
 )
 @app.on_message(
     filters.command("eval")
-    & filters.user(OWNER_ID)
     & sudo_admin_filter
     & ~filters.forwarded
     & ~filters.via_bot
@@ -154,7 +153,6 @@ async def forceclose_command(_, CallbackQuery):
 )
 @app.on_message(
     filters.command("sh")
-    & filters.user(OWNER_ID)
     &  sudo_admin_filter
     & ~filters.forwarded
     & ~filters.via_bot
