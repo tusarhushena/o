@@ -1,4 +1,4 @@
- from config import API_KEY, API_URL
+from config import API_KEY, API_URL
 import asyncio
 import os
 import re
