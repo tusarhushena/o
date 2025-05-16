@@ -50,7 +50,7 @@ def fit_text(draw, text, max_width, font_path, start_size, min_size):
     return ImageFont.truetype(font_path, min_size)
 
 
-async def get_thumb(videoid: str):
+async def gen_thumb(videoid: str):
     url = f"https://www.youtube.com/watch?v={videoid}"
     try:
         results = VideosSearch(url, limit=1)
