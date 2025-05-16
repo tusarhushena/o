@@ -30,12 +30,12 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
+API_URL = getenv("API_URL", None) #youtube song url
 API_KEY = getenv("API_KEY", None) # youtube song api key, get it from https://t.me/RahulTC
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/CyberPixelPro/AviaxMusic",
+    "https://github.com/tusarhushena/t",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -89,16 +89,16 @@ START_IMG_URL = getenv(
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org//file/3dfcffd0c218ead96b102.png"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
 STATS_IMG_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-TELEGRAM_VIDEO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
-YOUTUBE_IMG_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
+STREAM_IMG_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
+SOUNCLOUD_IMG_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
+YOUTUBE_IMG_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/1557a544d9b4f051f99c7-57891fa1d7578f5b79.jpg"
 
 
 def time_to_seconds(time):
